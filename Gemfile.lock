@@ -89,9 +89,10 @@ GEM
     brakeman (8.0.6)
       racc
     builder (3.3.0)
-    bunny (3.3.0)
+    bunny (3.4.0)
       amq-protocol (~> 2.9)
       logger (~> 1, >= 1.7)
+      openssl (>= 3.3)
       sorted_set (~> 1, >= 1.0.2)
     capybara (3.40.0)
       addressable
@@ -209,6 +210,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-musl)
       racc (~> 1.4)
+    openssl (4.0.2)
     ostruct (0.6.3)
     parallel (2.1.0)
     parser (3.3.12.0)
