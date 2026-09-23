@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  advisor: one
+  certification: one
+  issued_at: 2026-08-19
+
+two:
+  advisor: two
+  certification: two
+  issued_at: 2026-08-19

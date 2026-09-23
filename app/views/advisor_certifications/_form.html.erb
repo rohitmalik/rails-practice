@@ -1,0 +1,32 @@
+<%= form_with(model: advisor_certification) do |form| %>
+  <% if advisor_certification.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(advisor_certification.errors.count, "error") %> prohibited this advisor_certification from being saved:</h2>
+
+      <ul>
+        <% advisor_certification.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :advisor_id, style: "display: block" %>
+    <%= form.text_field :advisor_id %>
+  </div>
+
+  <div>
+    <%= form.label :certification_id, style: "display: block" %>
+    <%= form.text_field :certification_id %>
+  </div>
+
+  <div>
+    <%= form.label :issued_at, style: "display: block" %>
+    <%= form.date_field :issued_at %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,36 @@
+production:
+  primary:
+    adapter: postgresql
+    encoding: unicode
+    username: rohit
+    password: rohit123
+    host: postgres
+    port: 5432
+    database: paladin_practice_production
+
+  cable:
+    adapter: postgresql
+    encoding: unicode
+    username: rohit
+    password: rohit123
+    host: postgres
+    port: 5432
+    database: paladin_practice_cable
+
+  queue:
+    adapter: postgresql
+    encoding: unicode
+    username: rohit
+    password: rohit123
+    host: postgres
+    port: 5432
+    database: paladin_practice_queue
+
+  cache:
+    adapter: postgresql
+    encoding: unicode
+    username: rohit
+    password: rohit123
+    host: postgres
+    port: 5432
+    database: paladin_practice_cache

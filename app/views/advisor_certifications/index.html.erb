@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Advisor certifications" %>
+
+<h1>Advisor certifications</h1>
+
+<div id="advisor_certifications">
+  <% @advisor_certifications.each do |advisor_certification| %>
+    <%= render advisor_certification %>
+    <p>
+      <%= link_to "Show this advisor certification", advisor_certification %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New advisor certification", new_advisor_certification_path %>

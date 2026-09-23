@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: paladin-rails
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: paladin-rails
+
+  template:
+    metadata:
+      labels:
+        app: paladin-rails
+
+    spec:
+      containers:
+        - name: rails
+          image: paladin_practice:latest
+          imagePullPolicy: Never
+
+          ports:
+            - containerPort: 80
