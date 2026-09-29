@@ -21,7 +21,7 @@ RSpec.describe Advisor, type: :model do
       )
 
       expect(advisor).not_to be_valid
-      expect(advisor.errors[:email]).to include("can't be blank")
+      expect(advisor.errors[:email]).to include("Wrong message")
     end
   end
 end
